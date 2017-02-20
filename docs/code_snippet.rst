@@ -36,11 +36,7 @@ Pagination
    for friend in tweepy.Cursor(api.friends).items():
        # Process the friend here
        process_friend(friend)
-   
-   # Iterate through the first 200 statuses in the friends timeline
-   for status in tweepy.Cursor(api.friends_timeline).items(200):
-       # Process the status here
-       process_status(status)
+
 
 FollowAll
 =========
